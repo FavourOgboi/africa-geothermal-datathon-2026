@@ -1,0 +1,9 @@
+Rank,Well,Source,Score,Flow Rate,Temperature,Power,Transmissivity,Permeability
+1,BLT-01,Official Dataset,0.922275641025641,105.0,77.0,5.1,9.3,82.0
+2,VRE-01,ThermoGIS Scout,0.8944708036193543,102.0,79.0,5.2,8.5,69.0
+3,ZST-01,ThermoGIS Scout,0.7500415479582146,84.0,79.0,4.2,7.0,71.0
+4,BKN-01,ThermoGIS Scout,0.6960218659494022,79.0,80.0,4.0,6.1,53.0
+5,ODK-01,ThermoGIS Scout,0.6813200453599004,75.0,81.0,3.8,6.0,63.0
+6,JUT-01,Official Dataset,0.4624896037939516,55.0,72.0,2.3,4.8,40.0
+7,PKP-01,Official Dataset,0.1,0.0,88.0,0.0,0.1,1.0
+8,EVD-01,Official Dataset,0.026211858458235267,0.0,72.0,0.0,0.4,6.0

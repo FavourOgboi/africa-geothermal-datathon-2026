@@ -1,0 +1,12 @@
+Parameter,Value,Unit
+District Heating Demand,10,MW
+District Cooling Demand,5,MW
+BLT-01 Production Temp,77,°C
+GLA-01 Production Temp,70,°C
+BLT-01 Flow Rate,105,m³/h
+GLA-01 Flow Rate,140,m³/h
+Reinjection Temp,37.5,°C
+Supply Temp (District),70,°C
+Return Temp (District),40,°C
+ATES Warm Well Temp,25–35,°C
+ATES Cold Well Temp,8–15,°C
