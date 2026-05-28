@@ -1,0 +1,7 @@
+Parameter,BLT-01,GLA-01,GLA-02 (Backup)
+Role,Validated Production,Optimised Corridor,Contingency
+Production Temp (°C),77,70,71
+Flow Rate (m³/h),105,140,132
+Transmissivity (Dm),9.3,15.2,13.4
+Thermal Power (MW),5.1,6.1,5.7
+Reinjection Temp (°C),35-40,35-40,35-40
