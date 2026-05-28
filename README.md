@@ -102,6 +102,10 @@ Each notebook reads from `data/raw/` or outputs of the previous notebook, and wr
 3. **ATES integration** enables seasonal thermal balancing for the 5 MW cooling demand
 4. **Integrated system architecture** reduces peak-load dependency and minimises heat-pump electricity consumption
 
+## System Architecture
+
+![Integrated Geothermal District Energy System Architecture](outputs/figures/system%20architecture.PNG)
+
 ## External Data Sources
 
 - **ThermoGIS** (thermogis.nl): Used for supplementary well scouting and corridor optimisation. All extracted properties are documented in Notebook 01.
