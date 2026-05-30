@@ -1,0 +1,11 @@
+Metric,Value,Unit
+Blended production temperature,73.0,°C
+Total mass flow,70.8,kg/s
+Total geothermal power,11.30,MWth
+Heat pump upgrade,0.45,MWth
+Heat delivered to district,10.5,MWth
+District heating flow,300,m³/h
+Cooling capacity,5.0,MWth
+Cooling flow required,538,m³/h
+Heating margin above requirement,5,%
+Geothermal contribution,100,%

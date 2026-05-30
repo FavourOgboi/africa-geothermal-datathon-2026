@@ -98,13 +98,9 @@ Each notebook reads from `data/raw/` or outputs of the previous notebook, and wr
 ## Key Engineering Findings
 
 1. **Transmissivity > Temperature:** Hydraulic reservoir quality exerts stronger control on geothermal viability than temperature alone (PKP-01 counter-example: 88°C but 0.1 Dm transmissivity → non-viable)
-2. **BLT-01 + GLA-01 doublet** provides ~11.2 MW combined thermal output — meeting the 10 MW heating requirement
+2. **BLT-01 + GLA-01 doublet** provides ~10.8 MW combined thermal output — meeting the 10 MW heating requirement
 3. **ATES integration** enables seasonal thermal balancing for the 5 MW cooling demand
 4. **Integrated system architecture** reduces peak-load dependency and minimises heat-pump electricity consumption
-
-## System Architecture
-
-![Integrated Geothermal District Energy System Architecture](outputs/figures/system%20architecture.PNG)
 
 ## External Data Sources
 
