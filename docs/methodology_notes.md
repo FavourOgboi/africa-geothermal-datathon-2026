@@ -25,13 +25,13 @@ Q = ṁ × Cp × ΔT
 
 Where:
 - ṁ = mass flow rate (kg/s) = volumetric flow rate × brine density
-- Cp = 4250 J/kg·K (brine specific heat capacity)
+- Cp = 4.0 kJ/kg·K (brine specific heat, per Surface Facilities Design Report)
 - ΔT = production temperature − reinjection temperature
-- Brine density ρ = 1078 kg/m³
+- Brine density ρ = 1040 kg/m³ (per Surface Facilities Design Report)
 
 ## ATES Design Philosophy
 
-- Warm well: 25–35°C (stores excess geothermal heat)
+- Warm well: 15–35°C (stores excess geothermal heat)
 - Cold well: 8–15°C (stores winter cold for summer cooling)
 - Reduces heat pump dependency during peak demand
 - Enables seasonal thermal balancing

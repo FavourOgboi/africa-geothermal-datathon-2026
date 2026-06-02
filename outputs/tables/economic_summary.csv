@@ -1,10 +1,10 @@
 Metric,Value,Unit
-Total CAPEX,45.1,Mln EUR
-Annual OPEX,1.35,Mln EUR/yr
-Base Case LCoE,81.44,EUR/MWh
-P10 LCoE,72.45,EUR/MWh
-P50 LCoE,88.20,EUR/MWh
-P90 LCoE,107.28,EUR/MWh
+Total CAPEX,39.4,Mln EUR
+Annual OPEX,1.18,Mln EUR/yr
+Base Case LCoE,71.77,EUR/MWh
+P10 LCoE,65.08,EUR/MWh
+P50 LCoE,77.25,EUR/MWh
+P90 LCoE,91.52,EUR/MWh
 Project Lifetime,30,years
 Discount Rate,6,%
 Combined Thermal Output,11.2,MW

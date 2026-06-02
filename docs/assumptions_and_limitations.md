@@ -4,8 +4,8 @@
 
 ### Reservoir Properties
 - P50 ThermoGIS values used as base case for all screening and design calculations
-- Brine density: 1078 kg/m³ (saline formation water)
-- Brine specific heat: 4250 J/kg·K
+- Brine density: 1040 kg/m³ (per Surface Facilities Design Report)
+- Brine specific heat: 4.0 kJ/kg·K (per Surface Facilities Design Report)
 - Rock density: 2700 kg/m³
 - Rock specific heat: 1000 J/kg·K
 
@@ -13,9 +13,9 @@
 - Reinjection temperature: 35–40°C (post heat-extraction and heat-pump support)
 - District heating supply temperature: 70°C
 - District heating return temperature: 40°C
-- ATES warm well temperature: 25–35°C
+- ATES warm well temperature: 15–35°C
 - ATES cold well temperature: 8–15°C
-- Heat pump COP: 27 (from LCOE template — ratio thermal/electric)
+- Heat pump COP: 2.25 (thermal/electric for 68→70°C upgrade, per surface report). Note: the LCOE template figure of 27 is a system-level thermal:electric ratio, not the heat pump COP.
 
 ### Economic Parameters
 - Economic lifetime: 15 years (from LCOE template)

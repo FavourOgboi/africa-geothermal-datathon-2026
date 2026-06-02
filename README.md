@@ -2,122 +2,128 @@
 
 ## Project Title
 
-**Integrated Medium-Temperature Geothermal District Energy System — Transmissivity-Aware Reservoir Targeting with Uncertainty-Aware Optimisation**
+**Integrated Geothermal District Heating and Cooling System for Utrecht, Netherlands**
 
-## Team Name
+A transmissivity-aware geothermal doublet with ATES seasonal storage, buffer tanks, heat-pump upgrading, solar-powered mechanical cooling, and uncertainty-aware economics.
 
-**GeoLogic Analytics**
+## Team
+
+Team GeoLogic Analytics — SPE Africa Geothermal Datathon 2026
 
 ## Problem Statement
 
-This project develops an integrated geothermal district energy system for the Utrecht region (Netherlands) using medium-temperature resources from the Upper Rotliegend formation. The system targets:
+Design an integrated geothermal district energy system for the Utrecht region (Netherlands) delivering:
+- **10 MW district heating** (system delivers 10.5 MWth)
+- **5 MW district cooling** (system delivers 5.0 MWth)
 
-- **10 MW district heating** capacity
-- **5 MW district cooling** capacity
+using medium-temperature resources from the Upper Rotliegend (Slochteren) formation.
 
-through transmissivity-aware reservoir selection, ATES (Aquifer Thermal Energy Storage) integration, heat-pump-assisted operation, and hybrid backup systems — with uncertainty-aware economic evaluation.
+## System Architecture Summary
 
-## Methodology Summary
+**Subsurface (geothermal doublet + reinjection):**
+- Production: BLT-01 (77°C) + GLA-01 (70°C), blended to 73°C at 300 m³/h
+- Reinjection: REINJ-01 high-transmissivity corridor (31.1 Dm), brine returned at 37.5°C
+- Gross geothermal power: ~12.31 MWth
 
-### Stage 0 — Data Engineering and QC
-- LAS file ingestion for 4 official wells (BLT-01, EVD-01, JUT-01, PKP-01)
-- Missing-data assessment and visualisation
-- TVD validation using directional survey data
-- Lithostratigraphic integration for Rotliegend target zone identification
-- Feature engineering from well log properties
+**Surface facilities:**
+- Titanium plate heat exchanger (hydraulic separation, corrosion resistance)
+- Heat pump: upgrades 68→70°C, 0.45 MWth, COP ~2.25, 0.2 MW solar
+- Mechanical compression chiller: 5.0 MWth cooling, 1.0 MW
+- Hot buffer tank: 575 m³, 20 MWh (5 MWth peak / 4 hrs)
+- Cold buffer tank: 1225 m³, 10 MWh (2.5 MWth peak / 4 hrs)
+- ATES seasonal storage: warm well 15–35°C, cold well 8–15°C
+- Solar PV: 1.5 MW (powers heat pump + chiller, 0.3 MW surplus)
 
-### Stage 1 — Reservoir Intelligence
-- ThermoGIS P90/P50/P10 property analysis
-- ThermoGIS external scouting (4 supplementary candidates + 1 optimised corridor)
-- Multi-criteria geothermal screening and ranking
-- Transmissivity-driven viability assessment
-- Final doublet selection: BLT-01 + GLA-01
-
-### Stage 2 — Thermodynamic Modelling
-- Thermal extraction calculations (Q = ṁ × Cp × ΔT)
-- Seasonal demand modelling (heating and cooling profiles)
-- Heat-pump integration analysis
-- Cascade thermal utilisation
-
-### Stage 3 — Integrated System Design
-- Geothermal doublet production architecture
-- ATES warm/cold well integration
-- District heating/cooling loop design
-- Hybrid backup strategy
-
-### Stage 4 — Economic Analysis
-- LCoE modelling using adapted TNO framework
-- CAPEX/OPEX breakdown
-- Sensitivity analysis (drilling costs, flow rate, temperature)
-
-### Stage 5 — Uncertainty Analysis
-- P10/P50/P90 scenario propagation
-- Monte Carlo workflow for economic uncertainty
+**Economics:**
+- Total CAPEX: ~€39.4M (depth-based drilling for 3 wells + surface + solar)
+- LCoE: ~€72/MWh (within EU district-heating range)
+- Monte Carlo P10/P50/P90 uncertainty analysis
 
 ## Repository Structure
 
 ```
 africa-geothermal-datathon-2026/
 ├── README.md
+├── OUTSTANDING_ITEMS.md             # submission checklist
 ├── requirements.txt
-├── main.py                     # One-command pipeline runner
-├── .gitignore
+├── main.py                          # runs all notebooks end-to-end
+├── LICENSE
+│
 ├── data/
-│   ├── raw/                    # Original competition data + LCOE template
-│   ├── processed/              # Cleaned outputs from Notebook 01
-│   └── thermogis_exports/      # ThermoGIS screenshots and maps
+│   ├── raw/                         # competition data + LCOE template
+│   │   ├── BLT-01.las, EVD-01.las, JUT-01.las, PKP-01.las
+│   │   ├── ThermoGIS_Data.xlsx
+│   │   ├── Lithostratigraphic_Data.xlsx
+│   │   ├── Well_Path_Data.xlsx
+│   │   ├── target_lithologies.csv
+│   │   └── LCOE.xlsx
+│   ├── processed/                   # cleaned outputs from notebooks
+│   │   ├── cleaned_well_logs.csv
+│   │   ├── processed_thermogis_data.csv
+│   │   ├── geothermal_screening_summary.csv
+│   │   └── target_lithologies_corrected.csv
+│   └── thermogis_exports/
+│       └── thermogis_screenshots/
+│           ├── gla01_thermogis_properties.jpg
+│           └── reinj01_thermogis_transmissivity_map.jpg
+│
 ├── notebooks/
 │   ├── 01_geothermal_resource_assessment.ipynb
 │   ├── 02_integrated_energy_system_design.ipynb
 │   └── 03_economic_and_ai_workflow.ipynb
+│
 ├── outputs/
-│   ├── figures/
-│   ├── tables/
-│   └── exports/
+│   ├── figures/                     # 11 visualisations (.png)
+│   └── tables/                      # 8 summary tables (.csv)
+│
 ├── presentation_assets/
+│   ├── workflow_diagrams/
+│   │   ├── surface_design_flow_diagram.pdf
+│   │   └── system_architecture_handdrawn.jpg
+│   ├── report_figures/              # key figures for slides
+│   └── slide_exports/               # final slides (delivered via submission portal)
+│
 └── docs/
+    ├── methodology_notes.md
+    ├── assumptions_and_limitations.md
+    ├── Surface_Facilities_Design_Report.docx
+    └── thermodynamic_calculations/  # handwritten calc evidence
+        ├── 01_cooling_heating_flow_calc.jpg
+        ├── 02_brine_blending_calc.jpg
+        ├── 03_total_power_reinjection_calc.jpg
+        ├── 04_outlet_temp_calc.jpg
+        └── 05_heat_pump_district_power_calc.jpg
 ```
 
-## Instructions to Reproduce Results
+## Notebook Workflow
 
-### Environment Setup
+1. **01 — Geothermal Resource Assessment:** LAS ingestion, QC, TVD validation, lithostratigraphy, ThermoGIS screening, well ranking, injection well selection (REINJ-01), final architecture
+2. **02 — Integrated Energy System Design:** brine blending (73°C), heat exchanger, heat pump, chiller, ATES, buffer tanks, demand modelling, dispatch — matching the Surface Facilities Design Report
+3. **03 — Economics & AI Workflow:** depth-based drilling costs (3 wells), CAPEX/OPEX, LCoE, tornado sensitivity, Monte Carlo uncertainty, scenario comparison
+
+## Reproduce
 
 ```bash
 pip install -r requirements.txt
-```
-
-### Option A — Run the full pipeline automatically
-
-```bash
 python main.py
 ```
 
-This executes all three notebooks in sequence and saves outputs in place.
-
-### Option B — Execute notebooks manually (in order)
-
-```
-01_geothermal_resource_assessment.ipynb    → Data engineering + reservoir screening
-02_integrated_energy_system_design.ipynb   → System design + demand modelling
-03_economic_and_ai_workflow.ipynb          → Economics + uncertainty + automation
-```
-
-Each notebook reads from `data/raw/` or outputs of the previous notebook, and writes results to `data/processed/`, `outputs/figures/`, and `outputs/tables/`.
+Or run notebooks individually in order (01 → 02 → 03).
 
 ## Key Engineering Findings
 
-1. **Transmissivity > Temperature:** Hydraulic reservoir quality exerts stronger control on geothermal viability than temperature alone (PKP-01 counter-example: 88°C but 0.1 Dm transmissivity → non-viable)
-2. **BLT-01 + GLA-01 doublet** provides ~11.2 MW combined thermal output — exceeding the 10 MW heating requirement
-3. **ATES integration** enables seasonal thermal balancing for the 5 MW cooling demand
-4. **Integrated system architecture** reduces peak-load dependency and minimises heat-pump electricity consumption
+1. **Transmissivity > temperature** for geothermal viability (PKP-01: 88°C but 0.1 Dm → non-viable)
+2. **GLA-01 corridor** (15.2 Dm) and **REINJ-01** (31.1 Dm) found via ThermoGIS scouting outperform official wells
+3. Gross geothermal **12.31 MWth** exceeds the 10.5 MWth heating target
+4. **Cooling needs higher flow** (540 m³/h vs 300 m³/h heating) due to lower ΔT
+5. **Solar PV** covers all heat-pump and chiller electrical loads
+6. LCoE competitive with EU district-heating benchmarks
 
 ## External Data Sources
 
-- **ThermoGIS** (thermogis.nl): Used for supplementary well scouting and corridor optimisation. All extracted properties are documented in Notebook 01.
-- **TNO LCOE Framework**: Adapted for integrated geothermal district energy economics.
+- **ThermoGIS** (thermogis.nl) — supplementary well scouting and corridor optimisation
+- **TNO LCOE Framework** — adapted for integrated district energy economics
 
-## Dependencies
+## AI-Assisted Workflow Disclosure
 
-- Python 3.10+
-- pandas, numpy, matplotlib, seaborn, scipy, lasio, openpyxl
-- See `requirements.txt` for complete list
+AI tools were used as a productivity accelerator for code development, visualisation, and documentation. All engineering decisions and parameters were determined by the team from domain analysis and ThermoGIS data. See Notebook 03 for full disclosure.
