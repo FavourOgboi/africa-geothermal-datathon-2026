@@ -2,7 +2,7 @@
 
 ## Project Title
 
-**Integrated Geothermal District Heating and Cooling System for Utrecht, Netherlands**
+**Transmissivity-Aware Geothermal District Energy System for Utrecht, Netherlands**
 
 A transmissivity-aware geothermal doublet with ATES seasonal storage, buffer tanks, heat-pump upgrading, solar-powered mechanical cooling, and uncertainty-aware economics.
 
