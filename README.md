@@ -110,7 +110,7 @@ africa-geothermal-datathon-2026/
 
 1. **01 — Geothermal Resource Assessment:** LAS ingestion, QC, TVD validation, lithostratigraphy, ThermoGIS screening, well ranking, injection well selection (REINJ-01), final architecture
 2. **02 — Integrated Energy System Design:** brine blending (73°C), heat exchanger, heat pump, chiller, ATES, buffer tanks, demand modelling, dispatch — matching the Surface Facilities Design Report
-3. **03 — Economics & AI Workflow:** depth-based drilling costs (5 wells), CAPEX/OPEX, LCoE, tornado sensitivity, Monte Carlo uncertainty, scenario comparison
+3. **03 — Economic Analysis & Uncertainty:** depth-based drilling costs (5 wells), CAPEX/OPEX, LCoE, tornado sensitivity, Monte Carlo uncertainty, scenario comparison
 
 ## Reproduce
 
@@ -134,7 +134,3 @@ Or run notebooks individually in order (01 → 02 → 03).
 
 - **ThermoGIS** (thermogis.nl) — supplementary well scouting and corridor optimisation
 - **TNO LCOE Framework** — adapted for integrated district energy economics
-
-## AI-Assisted Workflow Disclosure
-
-AI tools were used as a productivity accelerator for code development, visualisation, and documentation. All engineering decisions and parameters were determined by the team from domain analysis and ThermoGIS data. See Notebook 03 for full disclosure.

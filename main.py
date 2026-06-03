@@ -9,7 +9,7 @@ Usage:
 This executes all three notebooks in sequence:
     01 → Geothermal Resource Assessment & Data Engineering
     02 → Integrated Energy System Design
-    03 → Economic Analysis, Uncertainty & AI-Assisted Workflow
+    03 → Economic Analysis & Uncertainty
 """
 
 import subprocess
