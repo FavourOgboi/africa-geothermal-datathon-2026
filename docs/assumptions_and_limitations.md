@@ -21,6 +21,7 @@
 - Economic lifetime: 15 years (from LCOE template)
 - Well cost scaling factor: 1.5
 - Pump investment: 0.3 Mln EUR/pump with workover every 5 years
+- ATES well depth: 150 m each (2 wells: warm + cold), drilled using same cost model as deep wells
 
 ### Demand Assumptions
 - District heating demand: 10 MW (minimum competition requirement)

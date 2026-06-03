@@ -1,12 +1,10 @@
 Parameter,Value,Unit
-District Heating Demand,10,MW
-District Cooling Demand,5,MW
-BLT-01 Production Temp,77,°C
-GLA-01 Production Temp,70,°C
-BLT-01 Flow Rate,105,m³/h
-GLA-01 Flow Rate,140,m³/h
+District Heating Delivered,10.5,MWth
+District Cooling Delivered,5.0,MWth
+Blended Production Temp,73.0,°C
+Gross Geothermal Power,10.05,MWth
+Heat Pump Upgrade,0.45,MWth
+Heat Pump Elec,0.2,MW
+Chiller Elec,1.0,MW
+Solar PV,1.5,MW
 Reinjection Temp,37.5,°C
-Supply Temp (District),70,°C
-Return Temp (District),40,°C
-ATES Warm Well Temp,25–35,°C
-ATES Cold Well Temp,8–15,°C

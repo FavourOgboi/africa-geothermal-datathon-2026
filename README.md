@@ -8,7 +8,15 @@ A transmissivity-aware geothermal doublet with ATES seasonal storage, buffer tan
 
 ## Team
 
-Team GeoLogic Analytics — SPE Africa Geothermal Datathon 2026
+**Team GeoLogic Analytics** — SPE Africa Geothermal Datathon 2026
+
+| Name | SPE Member ID |
+|------|---------------|
+| Uadia Moses Imoukhedeh | 5174626 |
+| Ogundimu Samuel Oluwaseun | 5408045 |
+| Akanmu Oluwaseun Emmanuel | 5436014 |
+| Adejor Friday Emmanuel | 5510461 |
+| Favour Ifeanyichukwu Ogboi | 5898562 |
 
 ## Problem Statement
 
@@ -20,10 +28,12 @@ using medium-temperature resources from the Upper Rotliegend (Slochteren) format
 
 ## System Architecture Summary
 
+![Integrated district energy system flow diagram](presentation_assets/workflow_diagrams/system_flow_diagram.jpeg)
+
 **Subsurface (geothermal doublet + reinjection):**
-- Production: BLT-01 (77°C) + GLA-01 (70°C), blended to 73°C at 300 m³/h
+- Production: BLT-01 (77°C, 105 m³/h) + GLA-01 (70°C, 140 m³/h), blended to 73°C at 245 m³/h
 - Reinjection: REINJ-01 high-transmissivity corridor (31.1 Dm), brine returned at 37.5°C
-- Gross geothermal power: ~12.31 MWth
+- Gross geothermal power: ~10.05 MWth
 
 **Surface facilities:**
 - Titanium plate heat exchanger (hydraulic separation, corrosion resistance)
@@ -35,8 +45,8 @@ using medium-temperature resources from the Upper Rotliegend (Slochteren) format
 - Solar PV: 1.5 MW (powers heat pump + chiller, 0.3 MW surplus)
 
 **Economics:**
-- Total CAPEX: ~€39.4M (depth-based drilling for 3 wells + surface + solar)
-- LCoE: ~€72/MWh (within EU district-heating range)
+- Total CAPEX: ~€41.0M (depth-based drilling for 5 wells + surface + solar)
+- LCoE: ~€74/MWh (within EU district-heating range)
 - Monte Carlo P10/P50/P90 uncertainty analysis
 
 ## Repository Structure
@@ -79,7 +89,8 @@ africa-geothermal-datathon-2026/
 ├── presentation_assets/
 │   ├── workflow_diagrams/
 │   │   ├── surface_design_flow_diagram.pdf
-│   │   └── system_architecture_handdrawn.jpg
+│   │   ├── system_architecture_handdrawn.jpg
+│   │   └── system_flow_diagram.jpeg
 │   ├── report_figures/              # key figures for slides
 │   └── slide_exports/               # final slides (delivered via submission portal)
 │
@@ -99,7 +110,7 @@ africa-geothermal-datathon-2026/
 
 1. **01 — Geothermal Resource Assessment:** LAS ingestion, QC, TVD validation, lithostratigraphy, ThermoGIS screening, well ranking, injection well selection (REINJ-01), final architecture
 2. **02 — Integrated Energy System Design:** brine blending (73°C), heat exchanger, heat pump, chiller, ATES, buffer tanks, demand modelling, dispatch — matching the Surface Facilities Design Report
-3. **03 — Economics & AI Workflow:** depth-based drilling costs (3 wells), CAPEX/OPEX, LCoE, tornado sensitivity, Monte Carlo uncertainty, scenario comparison
+3. **03 — Economics & AI Workflow:** depth-based drilling costs (5 wells), CAPEX/OPEX, LCoE, tornado sensitivity, Monte Carlo uncertainty, scenario comparison
 
 ## Reproduce
 
@@ -114,8 +125,8 @@ Or run notebooks individually in order (01 → 02 → 03).
 
 1. **Transmissivity > temperature** for geothermal viability (PKP-01: 88°C but 0.1 Dm → non-viable)
 2. **GLA-01 corridor** (15.2 Dm) and **REINJ-01** (31.1 Dm) found via ThermoGIS scouting outperform official wells
-3. Gross geothermal **12.31 MWth** exceeds the 10.5 MWth heating target
-4. **Cooling needs higher flow** (540 m³/h vs 300 m³/h heating) due to lower ΔT
+3. Gross geothermal **10.05 MWth** plus 0.45 MWth heat-pump upgrade meets the 10.5 MWth heating target
+4. **Cooling needs higher flow** (540 m³/h vs 245 m³/h brine production) due to lower ΔT
 5. **Solar PV** covers all heat-pump and chiller electrical loads
 6. LCoE competitive with EU district-heating benchmarks
 
