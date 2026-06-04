@@ -92,7 +92,9 @@ africa-geothermal-datathon-2026/
 │   │   ├── system_architecture_handdrawn.jpg
 │   │   └── system_flow_diagram.jpeg
 │   ├── report_figures/              # key figures for slides
-│   └── slide_exports/               # final slides (delivered via submission portal)
+│   └── slide_exports/               # final presentation slides
+│       ├── Team_GeoLogicAnalytics_PPT_V1.pdf
+│       └── Team_GeoLogicAnalytics_PPT_V1.pptx
 │
 └── docs/
     ├── methodology_notes.md
