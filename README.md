@@ -93,6 +93,7 @@ africa-geothermal-datathon-2026/
 │
 ├── presentation_assets/
 │   ├── workflow_diagrams/
+│   │   ├── surface-design.png
 │   │   └── system_architecture_handdrawn.jpg
 │   ├── report_figures/              # key figures for slides
 │   └── slide_exports/               # final presentation slides
