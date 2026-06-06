@@ -18,6 +18,10 @@ A transmissivity-aware geothermal doublet with ATES seasonal storage, buffer tan
 | Adejor Friday Emmanuel | 5510461 |
 | Favour Ifeanyichukwu Ogboi | 5898562 |
 
+## Presentation Video
+
+[![Watch our presentation](https://img.shields.io/badge/▶_Watch_Presentation-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1rbiMy7kFRNnisNeSCCH8tyK1UoGojisF/view?usp=sharing)
+
 ## Problem Statement
 
 Design an integrated geothermal district energy system for the Utrecht region (Netherlands) delivering:
@@ -28,7 +32,7 @@ using medium-temperature resources from the Upper Rotliegend (Slochteren) format
 
 ## System Architecture Summary
 
-![Integrated district energy system flow diagram](presentation_assets/workflow_diagrams/system_flow_diagram.jpeg)
+![Surface facilities design flow diagram](surface-design.png)
 
 **Subsurface (geothermal doublet + reinjection):**
 - Production: BLT-01 (77°C, 105 m³/h) + GLA-01 (70°C, 140 m³/h), blended to 73°C at 245 m³/h
@@ -55,6 +59,7 @@ using medium-temperature resources from the Upper Rotliegend (Slochteren) format
 africa-geothermal-datathon-2026/
 ├── README.md
 ├── OUTSTANDING_ITEMS.md             # submission checklist
+├── surface-design.png               # updated surface facilities design diagram
 ├── requirements.txt
 ├── main.py                          # runs all notebooks end-to-end
 ├── LICENSE
@@ -89,11 +94,9 @@ africa-geothermal-datathon-2026/
 ├── presentation_assets/
 │   ├── workflow_diagrams/
 │   │   ├── surface_design_flow_diagram.pdf
-│   │   ├── system_architecture_handdrawn.jpg
-│   │   └── system_flow_diagram.jpeg
+│   │   └── system_architecture_handdrawn.jpg
 │   ├── report_figures/              # key figures for slides
 │   └── slide_exports/               # final presentation slides
-│       ├── Team_GeoLogicAnalytics_PPT_V1.pdf
 │       └── Team_GeoLogicAnalytics_PPT_V1.pptx
 │
 └── docs/
